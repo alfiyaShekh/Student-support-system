@@ -52,13 +52,13 @@ function Login() {
                 <input
                   type="text"
                   placeholder="Full Name"
-                  className="w-full p-2 border rounded-lg"
+                  className="w-full p-2 border rounded-lg" required
                 />
 
                 <input
                   type="text"
                   placeholder="Class"
-                  className="w-full p-2 border rounded-lg"
+                  className="w-full p-2 border rounded-lg" required
                 />
 
                 
@@ -66,7 +66,7 @@ function Login() {
                 <input
                   type="email"
                   placeholder="Email"
-                  className="w-full p-2 border rounded-lg"
+                  className="w-full p-2 border rounded-lg" required
                 />
 
                
