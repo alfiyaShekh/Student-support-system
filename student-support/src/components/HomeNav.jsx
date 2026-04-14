@@ -32,7 +32,7 @@ function HomeNav() {
             
             <a href="#home" className="rounded-md pl-30 px-5 py-2 text-xs font-medium text-black hover:bg-white/5 hover:text-gray-700 hover:underline hover:scale-105 transition-transform duration-200 ease-in-out">Home</a>
             <a href="#about" className="rounded-md px-10 py-2 text-xs font-medium text-black hover:bg-white/5 hover:text-gray-700 hover:underline hover:scale-105 transition-transform duration-200 ease-in-out">About</a>
-            <a href="#" className="rounded-md px-10 py-2 text-xs font-medium text-black hover:bg-white/5 hover:text-gray-700 hover:underline hover:scale-105 transition-transform duration-200 ease-in-out">How it works</a>
+            <a href="#how" className="rounded-md px-10 py-2 text-xs font-medium text-black hover:bg-white/5 hover:text-gray-700 hover:underline hover:scale-105 transition-transform duration-200 ease-in-out">How it works</a>
             <a href="#" className="rounded-md px-10 py-2 text-xs font-medium text-black hover:bg-white/5 hover:text-gray-700 hover:underline hover:scale-105 transition-transform duration-200 ease-in-out">Contact Us</a>
           </div>
         </div>
