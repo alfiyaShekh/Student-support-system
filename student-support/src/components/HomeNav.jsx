@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandshake } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function HomeNav() {
   return (
@@ -33,16 +34,17 @@ function HomeNav() {
             <a href="#home" className="rounded-md pl-30 px-5 py-2 text-xs font-medium text-black hover:bg-white/5 hover:text-gray-700 hover:underline hover:scale-105 transition-transform duration-200 ease-in-out">Home</a>
             <a href="#about" className="rounded-md px-10 py-2 text-xs font-medium text-black hover:bg-white/5 hover:text-gray-700 hover:underline hover:scale-105 transition-transform duration-200 ease-in-out">About</a>
             <a href="#how" className="rounded-md px-10 py-2 text-xs font-medium text-black hover:bg-white/5 hover:text-gray-700 hover:underline hover:scale-105 transition-transform duration-200 ease-in-out">How it works</a>
-            <a href="#" className="rounded-md px-10 py-2 text-xs font-medium text-black hover:bg-white/5 hover:text-gray-700 hover:underline hover:scale-105 transition-transform duration-200 ease-in-out">Contact Us</a>
+            <a href="#contact" className="rounded-md px-10 py-2 text-xs font-medium text-black hover:bg-white/5 hover:text-gray-700 hover:underline hover:scale-105 transition-transform duration-200 ease-in-out">Contact Us</a>
           </div>
         </div>
       </div>
       <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <button type="button" className="relative p-0.5 rounded-sm text-sm font-mono bg-blue-500 text-black-400 hover:text-white hover:scale-105 transition-transform duration-200 ease-in-out">
-          {/* <span className="absolute -inset-1.5"></span>
-          <span className="sr-only">View notifications</span> */}
-          Login
-        </button>
+        
+        <Link to="/login">
+  <button className="relative p-0.5 rounded-sm text-sm font-mono bg-blue-500 text-white hover:text-white hover:scale-105 transition-transform duration-200 ease-in-out">
+    Login
+  </button>
+</Link>
 
         {/* <el-dropdown className="relative ml-3">
           <button className="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">

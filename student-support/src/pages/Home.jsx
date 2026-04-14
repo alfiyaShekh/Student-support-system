@@ -6,6 +6,10 @@ import Mentors from "../components/Mentors";
 
 
 function Home() {
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    alert("Thank you for connecting")
+  }
   return (
     <>
        <HomeNav />
@@ -158,11 +162,78 @@ function Home() {
 
           
           </div>
-
-          
-       </section>
+</section>
 
 
+     <section
+  id="contact"
+  className="relative py-20 bg-cover bg-center"
+  style={{
+    backgroundImage: `url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f")`,
+  }}
+>
+
+  {/* Overlay (blur + dark) */}
+  <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+
+  {/* Content */}
+  <div className="relative z-10 px-6">
+
+    {/* Title */}
+    <h2 className="text-3xl font-bold text-center text-white">
+      Contact Us
+    </h2>
+
+    <p className="mt-4 text-gray-200 text-center max-w-xl mx-auto">
+      Have questions? We’d love to hear from you.
+    </p>
+
+    {/* Form */}
+    <div className="mt-10 max-w-2xl mx-auto bg-white/90 p-6 rounded-xl shadow-lg">
+
+      <form className="space-y-4" onSubmit={handleSubmit}>
+
+        <input
+          type="text"
+          placeholder="Your Name"
+          className="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400" required
+        />
+
+        <input
+          type="email"
+          placeholder="Your Email"
+          className="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400" required
+        />
+
+        <textarea
+          rows="4"
+          placeholder="Your Message"
+          className="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400" required
+        ></textarea>
+
+        <button
+          type="submit"
+          className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition"
+        >
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+    {/* Social Links */}
+    <div className="mt-8 flex justify-center space-x-6 text-white text-xl">
+
+      <a className="hover:scale-110 transition">📧</a>
+      <a className="hover:scale-110 transition">📱</a>
+      <a className="hover:scale-110 transition">🌐</a>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 
