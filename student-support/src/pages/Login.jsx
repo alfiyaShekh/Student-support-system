@@ -9,7 +9,7 @@ function Login() {
       <div className="w-full max-w-2xl bg-white rounded-xl shadow-lg overflow-hidden grid md:grid-cols-2">
 
         {/* LEFT SIDE */}
-        <div className="bg-gradient-to-br from-cyan-400 to-blue-500 text-white p-8 flex flex-col justify-center">
+        <div className="bg-gradient-to-br from-cyan-400 to-blue-500 text-white p-6 flex flex-col justify-center">
 
           <h3 className="text-sm font-semibold mb-4">
             COMPANY LOGO
@@ -39,34 +39,37 @@ function Login() {
           </p>
 
           {/* FORM */}
-          <form className="mt-6 space-y-4">
+          <form className="mt-3 space-y-1">
 
             {/* SIGNUP ONLY */}
             {!isLogin && (
               <>
+               <select className="w-full p-2 border rounded-lg">
+                  <option value="">Register As</option>
+                  <option value="student">Student</option>
+                  <option value="mentor">Mentor</option>
+                </select>
                 <input
                   type="text"
                   placeholder="Full Name"
-                  className="w-full p-3 border rounded-lg"
+                  className="w-full p-2 border rounded-lg"
                 />
 
                 <input
                   type="text"
                   placeholder="Class"
-                  className="w-full p-3 border rounded-lg"
+                  className="w-full p-2 border rounded-lg"
                 />
 
-                <select className="w-full p-3 border rounded-lg">
-                  <option value="">Register As</option>
-                  <option value="student">Student</option>
-                  <option value="mentor">Mentor</option>
-                </select>
+                
 
                 <input
                   type="email"
                   placeholder="Email"
-                  className="w-full p-3 border rounded-lg"
+                  className="w-full p-2 border rounded-lg"
                 />
+
+               
               </>
             )}
 
@@ -82,7 +85,7 @@ function Login() {
             <input
               type="password"
               placeholder="Password"
-              className="w-full p-3 border rounded-lg"
+              className="w-full p-2 border rounded-lg"
             />
 
             {/* Checkbox */}
@@ -96,7 +99,7 @@ function Login() {
             {/* BUTTON */}
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition"
+              className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
             >
               {isLogin ? "LOGIN" : "CREATE ACCOUNT"}
             </button>
